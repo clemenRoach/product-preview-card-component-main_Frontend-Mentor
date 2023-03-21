@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --p_color: hsl(228, 12%, 48%);
+    --btn_color: hsl(158, 36%, 37%);
+}
+
+body {
+    background-color: #F3EAE3;
+}
+
+
+main {
+    background-color: white;
+    border-radius: 0.5em;
+    margin: 2em;
+    height: 70vh;
+    display: grid;
+}
+
+.container {
+    padding: 1.5em;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+}
+
+p,
+button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    color: var(--p_color);
+    font-size: 14px;
+}
+
+picture .img_on_sm {
+    width: 100%;
+    border-radius: 0.5em 0.5em 0em 0em;
+}
+
+.product_head {
+    margin: 0.3em 0em;
+}
+
+.amount {
+    display: inline-flex;
+    margin-top: 1em;
+}
+
+.amount h1 {
+    padding: 0.3em 0em;
+    color: var(--btn_color);
+}
+
+.amount p {
+    text-decoration: line-through;
+    margin: auto 1em;
+}
+
+.product_title {
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+}
+
+.about_product {
+    line-height: 1.5em;
+}
+
+button {
+    background-color: var(--btn_color);
+    padding: 1.5em 9em;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 700;
+    border-radius: 0.5em;
+    border: none;
+    margin: 1em auto;
+}
+
+button span {
+    width: 20px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:600px) {
+    body {
+        margin-top: 5em;
+    }
+
+    main {
+        display: grid;
+        max-width: 600px;
+        grid-template-columns: 1fr 1fr;
+        height: 450px;
+        margin: auto;
+        padding: 0;
+    }
+
+    button {
+        background-color: var(--btn_color);
+        padding: 1.5em 5em;
+        color: white;
+        text-transform: capitalize;
+        font-weight: 700;
+        border-radius: 0.5em;
+        border: none;
+    }
+
+    .container {
+        padding: 1.5em 2em;
+    }
+
+    picture .img_on_sm {
+        width: 100%;
+        border-radius: 0.5em 0em 0em 0.5em;
+    }
+
+}
